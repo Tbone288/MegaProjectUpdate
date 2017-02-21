@@ -86,9 +86,32 @@ Type Array<Type> :: getFromIndex(int index)
 
 
 template <class Type>
-int Array<Type> :: getSize()
+int Array<Type> :: getSize() const
 {
     return size;
+}
+
+//Destructor-de-allocates all memory called by 'new' keyword.
+//The count and cout statements are temporary and will be deleted.
+template <class Type>
+Array<Type> :: ~Array()
+{
+    int count = size;
+    Node<Type> * remove = front;
+    while(front != nullptr)
+    {
+        //Move to next node in array.
+        front = front->getNodePointer();
+        cout << "Moving to the next node. At: " << cout endl;
+        //Delete the front pointer.
+        delete remove;
+        cout << "Deleteing the old front pointer." << endl;
+        //Move delete to the new front.
+        remove = front;
+        cout << "Moving to new front pointer." << endl;
+        cout--;
+        cout << "Front is at: " << front << " count is: " << count << endl;
+    }
 }
 
 #endif /* Array_h */
