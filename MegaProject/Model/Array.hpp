@@ -114,4 +114,36 @@ Array<Type> :: ~Array()
     }
 }
 
+//Copy Constructor- called when you create an instance of an object by assigning it via =.
+template <class Type>
+Array<Type> :: Array(const Array<Type> & toBeCopied)
+{
+    this->size = toBeCopied.getSize();
+    
+    //Build Data Structure
+    this->size = new Node<Type>();
+    for(int index = 1; index < size; index++)
+    {
+        Node<Type> * temp = new Node<Type>();
+        temp->setNodePointer(front);
+        front= temp;
+    }
+    //Copy values into new Array.
+    Node<Type> * copyTemp = toBeCopied.getFront();
+    Node<Type> * updated = this->front;
+    for(int index = 0; index < size; index++)
+    {
+        updated->setNodeData(copyTemp->getNodeData());
+        updated = updated-> getNodePointer();
+        copyTemp = copyTemp->getNodePointer();
+    }
+}
+
+//The const modifier at the end of the method is used to denote that the method does not impact the state of the object.
+template <class Type>
+Node<Type> * Array<Type> :: getFront() const
+{
+    return front;
+}
+
 #endif /* Array_h */
