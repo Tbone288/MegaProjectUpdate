@@ -32,6 +32,7 @@
 		5C25A3E11E490EF100945FEF /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		5C25A3E21E490EF100945FEF /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
 		5C4E00791E5CD9F900F29AE2 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
+		5CAC2A6C1E64C745006FF367 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
 		5CFBDA381E4BA92E001F9CB4 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		5CFBDA391E4BA92E001F9CB4 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		5CFBDA3B1E4BB21F001F9CB4 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Controller/DataStructureController.cpp; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 				5C05C9861E523E2A003C950F /* Node.hpp */,
 				5C02F55A1E54E78100AD94D1 /* Array.hpp */,
 				5C4E00791E5CD9F900F29AE2 /* List.hpp */,
+				5CAC2A6C1E64C745006FF367 /* BiDirectionalNode.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
