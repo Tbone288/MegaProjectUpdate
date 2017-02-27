@@ -11,13 +11,17 @@
 
 #include "Node.hpp"
 #include <assert.h>
+#include <iostream>
+
+using namespace std;
 
 template <class Type>
+
 class Array
 {
 private:
     int size;
-    Node<Type> * front'
+    Node<Type> * front;
 public:
     Array();
     Array(int size);
@@ -50,9 +54,9 @@ Array <Type> :: Array(int size)
     this->size = size;
     this ->front = new Node<Type>();
     
-    for(int index - 1; index < size; index++)
+    for(int index = 1; index < size; index++)
     {
-        Node <Type> * current = new Node<Type>();
+        Node<Type> * current = new Node<Type>();
         current->setNodePointer(front);
         front = current;
     }
@@ -65,6 +69,10 @@ void Array<Type> :: setAtIndex(int index, Type data)
     assert(index >= 0 && index < size);
     Node<Type> * current = front;
     for(int spot = 0; spot < index; spot++)
+    {
+        current = current->getNodePointer();
+    }
+    current ->setNodeData(data);
 }
 
 template <class Type>
@@ -102,14 +110,14 @@ Array<Type> :: ~Array()
     {
         //Move to next node in array.
         front = front->getNodePointer();
-        cout << "Moving to the next node. At: " << cout endl;
+        cout << "Moving to the next node. At: " << count << endl;
         //Delete the front pointer.
         delete remove;
         cout << "Deleteing the old front pointer." << endl;
         //Move delete to the new front.
         remove = front;
         cout << "Moving to new front pointer." << endl;
-        cout--;
+        count--;
         cout << "Front is at: " << front << " count is: " << count << endl;
     }
 }
@@ -121,7 +129,7 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     this->size = toBeCopied.getSize();
     
     //Build Data Structure
-    this->size = new Node<Type>();
+    this->front = new Node<Type>();
     for(int index = 1; index < size; index++)
     {
         Node<Type> * temp = new Node<Type>();
