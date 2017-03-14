@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C25A3E31E490EF100945FEF /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C25A3E11E490EF100945FEF /* IntNode.cpp */; };
+		5C657F681E7711F600BC5D31 /* FoodItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C657F661E7711F600BC5D31 /* FoodItem.cpp */; };
 		5CFBDA3A1E4BA92E001F9CB4 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CFBDA381E4BA92E001F9CB4 /* IntNodeArray.cpp */; };
 		5CFBDA3D1E4BB21F001F9CB4 /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CFBDA3B1E4BB21F001F9CB4 /* DataStructureController.cpp */; };
 		5CFBDA3F1E4BB773001F9CB4 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CFBDA3E1E4BB773001F9CB4 /* NodeRunner.cpp */; };
@@ -31,10 +32,16 @@
 		5C25A3D71E49046B00945FEF /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C25A3E11E490EF100945FEF /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		5C25A3E21E490EF100945FEF /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
+		5C42DD8B1E71D94C00EE5C55 /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
+		5C42DD8C1E71E54E00EE5C55 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 		5C4E00791E5CD9F900F29AE2 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
+		5C657F661E7711F600BC5D31 /* FoodItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoodItem.cpp; path = Model/FoodItem.cpp; sourceTree = "<group>"; };
+		5C657F671E7711F600BC5D31 /* FoodItem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FoodItem.hpp; path = Model/FoodItem.hpp; sourceTree = "<group>"; };
 		5C7D32501E675D190085267B /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		5C7D32541E6768390085267B /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
 		5CAC2A6C1E64C745006FF367 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
+		5CB1D23F1E6F3F9B00ED042C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
+		5CB1D2401E6F4AC600ED042C /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
 		5CFBDA381E4BA92E001F9CB4 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		5CFBDA391E4BA92E001F9CB4 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		5CFBDA3B1E4BB21F001F9CB4 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Controller/DataStructureController.cpp; sourceTree = "<group>"; };
@@ -91,6 +98,12 @@
 				5CAC2A6C1E64C745006FF367 /* BiDirectionalNode.hpp */,
 				5C7D32501E675D190085267B /* DoublyLinkedList.hpp */,
 				5C7D32541E6768390085267B /* CircularList.hpp */,
+				5CB1D23F1E6F3F9B00ED042C /* Queue.hpp */,
+				5CB1D2401E6F4AC600ED042C /* Stack.hpp */,
+				5C42DD8B1E71D94C00EE5C55 /* DoubleList.hpp */,
+				5C42DD8C1E71E54E00EE5C55 /* Timer.hpp */,
+				5C657F661E7711F600BC5D31 /* FoodItem.cpp */,
+				5C657F671E7711F600BC5D31 /* FoodItem.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -167,6 +180,7 @@
 				5CFBDA3D1E4BB21F001F9CB4 /* DataStructureController.cpp in Sources */,
 				5CFBDA3A1E4BA92E001F9CB4 /* IntNodeArray.cpp in Sources */,
 				5CFBDA3F1E4BB773001F9CB4 /* NodeRunner.cpp in Sources */,
+				5C657F681E7711F600BC5D31 /* FoodItem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

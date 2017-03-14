@@ -14,14 +14,14 @@ class BiDirectionalNode : public Node<Type>
 {
 private:
     BiDirectionalNode<Type> * previous;
-    BiDirectionalNode<Type> * next;
+    BiDirectionalNode<Type> * nextPointer;
     Type data;
 public:
     BiDirectionalNode();
     BiDirectionalNode(Type data);
     BiDirectionalNode(Type data, BiDirectionalNode<Type> * previous,
         BiDirectionalNode<Type> * next);
-}
+};
 
 template <class Type>
 BiDirectionalNode<Type> :: BiDirectionalNode() : Node<Type>()
@@ -33,6 +33,22 @@ BiDirectionalNode<Type> :: BiDirectionalNode(Type data) : Node<Type>(data)
 {
     
 }
+
+template <class Type>
+BiDirectionalNode<Type> * BiDirectionalNode<Type> :: getNextPointer()
+{
+    return this->previous;
+}
+
+template <class Type>
+BiDirectionalNode<Type> :: BirectionalNode<Type> : Node<Type>()
+{
+    this->nextPointer = nullptr;
+    this->previous = nullptr;
+}
+
+template <class Type>
+BiDirectionalNode<Type> :: BirectionalNode<data> : Node<Type>(data)
 
 
 #endif /* BiDirectionalNode_h */
