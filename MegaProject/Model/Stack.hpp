@@ -31,6 +31,12 @@ Stack<Type> :: Stack() : DoublyLinkedList<Type>()
     
 }
 
+template <class Type>
+void Stack<Type> :: add(Type valueToAdd)
+{
+    push(valueToAdd);
+}
+
 /*
  1. Creates a new node
  2. If the stack is empty sets front to the new node
