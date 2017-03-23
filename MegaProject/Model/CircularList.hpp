@@ -157,6 +157,7 @@ Type CircularList<Type> :: setAtIndex(int index, Type  data)
     current->setNodeData(data);
     
     return replaced;
+    
 }
 
 

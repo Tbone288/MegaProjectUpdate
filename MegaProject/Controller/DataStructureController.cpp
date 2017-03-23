@@ -9,17 +9,21 @@
 #include "DataStructureController.hpp"
 #include <iostream>
 #include "../Model/IntNodeArray.hpp"
+#include "../Model/List.h"
+
 using namespace std;
 
 DataStructureController :: DataStructureController()
 {
-    
+    wordNode = Node<string> ("Derpy");
+    numberNode = Node<int> ();
+    sample = List<int> ();
 }
 
 void DataStructureController :: start()
 {
     cout << "Going to test the Timing of DoubleList" << endl;
-    testListTiming();
+    testFoodQueue();
     cout << "Finished testing" << endl;
 }
 
@@ -125,6 +129,9 @@ void DataStructureController :: testIntStack()
     numberStack.add(2315);
     numberStack.push(32);
     int testValue = numberStack.pop();
+    numberStack.peek();
+    numberStack.getSize();
+    numberStack.remove();
     cout << "Test value is " << testValue << " and should be 32" << endl;
     
 }
@@ -132,13 +139,15 @@ void DataStructureController :: testIntStack()
     void DataStructureController :: testFoodQueue()
     {
         Queue<FoodItem> tastyFood;
-        FoodItem szechwan("tiger tail donut");
+        FoodItem tigerDonut("cinnamon goodness yum");
         
-        tastyFood.enqueue(szechwan);
+        tastyFood.enqueue(tigerDonut);
         FoodItem boring;
         tastyFood.add(boring);
+        tastyFood.peek();
         
         FoodItem removed = tastyFood.dequeue();
-        cout << "The item removed from the queue was: " << removed.getFoodName() << " and should be: tiger tail donut" << endl;
+        cout << "The item removed from the queue was: " << removed.getFoodName() << " and should be: cinnamon goodness yum" << endl;
+        cout << "The size is: " << tastyFood.getSize() << endl;
     }
 }

@@ -64,11 +64,6 @@ BiDirectionalNode<Type> * DoublyLinkedList<Type> :: getEnd()
     return end;
 }
 
-template<class Type>
-void DoublyLinkedList<Type> :: setFront(BiDirectionalNode<Type> * front)
-{
-    this->front = front;
-}
 
 
 #endif /* DoublyLinkedList_h */
