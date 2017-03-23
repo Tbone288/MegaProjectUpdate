@@ -131,6 +131,7 @@ Type Queue<Type> :: peek()
 {
     assert(this->getSize() > 0);
     
+    return this->getFront()->getNodeData();
 }
 
 
