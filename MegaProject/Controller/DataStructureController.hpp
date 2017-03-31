@@ -27,6 +27,9 @@ class DataStructureController
 {
 private:
     void testIntArray();
+    Node<int> numberNode;
+    Node<string> wordNode;
+    void testNodes();
     void testNodeTypes();
     void testArrayTemplate();
     void testDestructor();

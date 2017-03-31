@@ -6,9 +6,6 @@
 //  Copyright © 2017 Odom, Tyler. All rights reserved.
 //
 
-#ifndef Timer_h
-#define Timer_h
-
 #ifndef Timer_hpp
 #define Timer_hpp
 
@@ -18,6 +15,7 @@ class Timer
 {
 private:
     clock_t executionTime;
+    
 public:
     Timer();
     void startTimer();
@@ -25,6 +23,7 @@ public:
     void resetTimer();
     void displayTimerInformation();
     long getExecutionTimeInMicroseconds();
+    
 };
 
-#endif /* Timer_h */
+#endif /* Timer_hpp */

@@ -40,13 +40,13 @@ DoubleList<FoodItem> FileController :: readFoodItemDataFromFileAsList(string fil
             if (rowCount != 0)
             {
                 cost = stod(tempCost);
-                calories = stoi(tempCalorie);
+                calorie = stoi(tempCalorie);
                 isDelish = stoi(tempTasty);
                 
                 FoodItem temp(title);
                 temp.setCost(cost);
-                temp.setCalories(calories);
-                temp.setDelicious(isDelicious);
+                temp.setCalories(calorie);
+                temp.setDelicious(isDelish);
                 
                 dataSource.add(temp);
             }

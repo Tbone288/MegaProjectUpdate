@@ -25,7 +25,7 @@ private:
     DoubleList<FoodItem> foodItemList;
 public:
     DoubleList<FoodItem> readFoodItemDataFromFileAsList(string filename);
-    void writeFoddItemDataStatistics(DoubleList<FoodItem> source, string filename);
+    void writeFoodItemDataStatistics(DoubleList<FoodItem> source, string filename);
 };
 
 

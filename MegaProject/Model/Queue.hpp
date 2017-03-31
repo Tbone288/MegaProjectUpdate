@@ -9,8 +9,10 @@
 #ifndef Queue_h
 #define Queue_h
 
-template <class Type>
-class Queue :: public DoublyLinkedList<Type>
+#include "DoublyLinkedList.hpp"
+
+template<class Type>
+class Queue : public DoublyLinkedList<Type>
 {
 private:
     
@@ -24,13 +26,13 @@ public:
     Type peek();
 };
 
-template <class Type>
+template<class Type>
 Queue<Type> :: Queue() : DoublyLinkedList<Type>()
 {
     
 }
 
-template <class Type>
+template<class Type>
 Queue<Type> :: ~Queue()
 {
     BiDirectionalNode<Type> * remove = this->getFront();
@@ -38,30 +40,31 @@ Queue<Type> :: ~Queue()
     {
         this->setFront(this->getFront()->getNextPointer());
         delete remove;
-        remove = this-> getFront();
+        remove = this->getFront();
     }
 }
 
-template <class Type>
+template<class Type>
 void Queue<Type> :: add(Type value)
 {
     enqueue(value);
 }
+
 /*
  Add to Queue:
  Create Node
- If First -adjust front
- else set new node to ends next, and connects new nodes previous to end.
- move end to new node.
- adjust size + 1
+ If First - adjust front
+ else add to end
+ move end
+ adjust size
  */
 
 template<class Type>
-void Queue<Type> :: enqueue(Type insertedvalue)
+void Queue<Type> :: enqueue(Type insertedValue)
 {
     BiDirectionalNode<Type> * added = new BiDirectionalNode<Type>(insertedValue);
     
-    if(this->getSize() == 0 || this->getFront == nullptr || this->getEnd() == nullptr)
+    if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)
     {
         this->setFront(added);
     }
@@ -89,32 +92,30 @@ Type Queue<Type> :: remove(int index)
 /*
  Check size
  If size == 1
-    adjust front/end to nullptr
+ adjust front/end to nullptr
  else
-    move front to next
+ move front to next
  delete node
- adjust size
- return value
+ ajust size
+ returhn value
  */
 
 template<class Type>
 Type Queue<Type> :: dequeue()
 {
     assert(this->getSize() > 0);
-    Type removedValue = this->getFront()->getNodeData;
+    Type removedValue = this->getFront()->getNodeData();
     BiDirectionalNode<Type> * removeMe = this->getFront();
-    
     if(this->getSize() == 1)
     {
-        this->setEnd(nullptr);
         this->setFront(nullptr);
+        this->setEnd(nullptr);
     }
     else
     {
         this->setFront(removeMe->getNextPointer());
-        this->setFront()->setPreviousPointer(nullptr);
+        this->getFront()->setPreviousPointer(nullptr);
     }
-   
     
     delete removeMe;
     this->setSize(this->getSize() - 1);
@@ -122,17 +123,12 @@ Type Queue<Type> :: dequeue()
     return removedValue;
 }
 
-/*
- 1. Check that the size is greater than 0.
- 2. Return the front objects data.
- */
-template <class Type>
+template<class Type>
 Type Queue<Type> :: peek()
 {
     assert(this->getSize() > 0);
     
     return this->getFront()->getNodeData();
 }
-
 
 #endif /* Queue_h */
