@@ -26,6 +26,11 @@ void DataStructureController:: testNodes()
     
 }
 
+void DataStructureController :: testLists()
+{
+   
+}
+
 void DataStructureController :: start()
 {
     cout << "Starting the project" << endl;

@@ -7,6 +7,7 @@
 //
 
 #include "CrimeData.hpp"
+#include <cmath>
 
 CrimeData :: CrimeData()
 {
@@ -233,7 +234,7 @@ void CrimeData :: setYear(const int & year)
 
 bool CrimeData :: operator < (const CrimeData & comparedData)
 {
-    bool thisIsLessCrime = false;
+    bool thisIsMoreCrime = false;
     double comparisonFactor = 0.0;
     
     if(this->getAllViolent() < comparedData.getAllViolent())
@@ -295,10 +296,17 @@ bool CrimeData :: operator < (const CrimeData & comparedData)
     
     comparisonFactor += populationFactor;
     
-    if(comparisonFactor<0)
+    if(comparisonFactor > 0)
     {
-        thisIsLessCrime = true;
+        thisIsMoreCrime = true;
     }
-    return thisIsLessCrime;
+    return thisIsMoreCrime;
+}
+
+bool CrimeData :: operator == (const CrimeData & compared)
+{
+    bool isThisTheSame = !(*this < compared) && !(*this > compared);
+    
+    return isThisTheSame;
 }
 

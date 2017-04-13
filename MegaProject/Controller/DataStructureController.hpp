@@ -30,6 +30,7 @@ private:
     Node<int> numberNode;
     Node<string> wordNode;
     void testNodes();
+    void testLists();
     void testNodeTypes();
     void testArrayTemplate();
     void testDestructor();

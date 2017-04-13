@@ -48,6 +48,9 @@
 		5CB10EF41E8C336400F2D0FB /* FileController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileController.cpp; path = Controller/FileController.cpp; sourceTree = "<group>"; };
 		5CB1D23F1E6F3F9B00ED042C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
 		5CB1D2401E6F4AC600ED042C /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
+		5CD03FDD1E9D54130050955A /* BinarySearchTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTreeNode.hpp; path = Model/BinarySearchTreeNode.hpp; sourceTree = "<group>"; };
+		5CD03FDE1E9D58960050955A /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Tree.hpp; path = Model/Tree.hpp; sourceTree = "<group>"; };
+		5CD03FDF1E9D5B580050955A /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTree.hpp; path = Model/BinarySearchTree.hpp; sourceTree = "<group>"; };
 		5CFBDA381E4BA92E001F9CB4 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		5CFBDA391E4BA92E001F9CB4 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		5CFBDA3B1E4BB21F001F9CB4 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Controller/DataStructureController.cpp; sourceTree = "<group>"; };
@@ -112,6 +115,9 @@
 				5C42DD8C1E71E54E00EE5C55 /* Timer.hpp */,
 				5C657F661E7711F600BC5D31 /* FoodItem.cpp */,
 				5C657F671E7711F600BC5D31 /* FoodItem.hpp */,
+				5CD03FDD1E9D54130050955A /* BinarySearchTreeNode.hpp */,
+				5CD03FDE1E9D58960050955A /* Tree.hpp */,
+				5CD03FDF1E9D5B580050955A /* BinarySearchTree.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
