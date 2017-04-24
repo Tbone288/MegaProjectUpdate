@@ -10,44 +10,24 @@
 #define Tree_h
 
 #include <assert.h>
-
-template<class Type>
+template <class Type>
 class Tree
 {
-private:
-    int height;
-    int size;
-    bool complete;
-    bool balanced;
-    
 public:
-    Tree();
-    virtual void
+    //Traversals
+    virtual void inOrderTraversal() = 0;
+    virtual void postOrderTraversal() = 0;
+    virtual void preOrderTraversal() = 0;
+    //Informational Methods
+    virtual int getHeight() = 0;
+    virtual int getSize() = 0;
+    virtual bool isComplete() = 0;
+    virtual bool isBalanced() = 0;
+    //Data Methods
+    virtual bool contains(Type value) = 0;
+    virtual void insert(Type itemToInsert) = 0;
+    virtual void remove(Type value) = 0;
 };
-
-template <class Type>
-int Tree<Type> :: getHeight() const
-{
-    return this->height;
-}
-
-template <class Type>
-int Tree<Type> :: getSize() const
-{
-    
-}
-
-template <class Type>
-bool Tree<Type> :: isComplete() const
-{
-    
-}
-
-template <class Type>
-bool Tree<Type> :: isBalanced const
-{
-    
-}
 
 
 
