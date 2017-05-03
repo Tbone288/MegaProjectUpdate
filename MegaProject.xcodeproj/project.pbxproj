@@ -12,6 +12,7 @@
 		5C7CC17B1EAA7B6B00B70758 /* AMLTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C7CC1791EAA7B6B00B70758 /* AMLTree.cpp */; };
 		5CB10EF21E8C2F5F00F2D0FB /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10EF11E8C2F5F00F2D0FB /* CrimeData.cpp */; };
 		5CB10EF51E8C336400F2D0FB /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10EF41E8C336400F2D0FB /* FileController.cpp */; };
+		5CC4558D1EBA54520026582F /* HashNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CC4558C1EBA54520026582F /* HashNode.cpp */; };
 		5CFBDA3A1E4BA92E001F9CB4 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CFBDA381E4BA92E001F9CB4 /* IntNodeArray.cpp */; };
 		5CFBDA3D1E4BB21F001F9CB4 /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CFBDA3B1E4BB21F001F9CB4 /* DataStructureController.cpp */; };
 		5CFBDA3F1E4BB773001F9CB4 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CFBDA3E1E4BB773001F9CB4 /* NodeRunner.cpp */; };
@@ -51,6 +52,9 @@
 		5CB10EF41E8C336400F2D0FB /* FileController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileController.cpp; path = Controller/FileController.cpp; sourceTree = "<group>"; };
 		5CB1D23F1E6F3F9B00ED042C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
 		5CB1D2401E6F4AC600ED042C /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
+		5CC4558A1EBA53D50026582F /* HashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashTable.hpp; path = Model/HashTable.hpp; sourceTree = "<group>"; };
+		5CC4558B1EBA54260026582F /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashNode.hpp; path = Model/HashNode.hpp; sourceTree = "<group>"; };
+		5CC4558C1EBA54520026582F /* HashNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HashNode.cpp; path = Model/HashNode.cpp; sourceTree = "<group>"; };
 		5CD03FDD1E9D54130050955A /* BinarySearchTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTreeNode.hpp; path = Model/BinarySearchTreeNode.hpp; sourceTree = "<group>"; };
 		5CD03FDE1E9D58960050955A /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Tree.hpp; path = Model/Tree.hpp; sourceTree = "<group>"; };
 		5CD03FDF1E9D5B580050955A /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTree.hpp; path = Model/BinarySearchTree.hpp; sourceTree = "<group>"; };
@@ -123,6 +127,9 @@
 				5CD03FDF1E9D5B580050955A /* BinarySearchTree.hpp */,
 				5C7CC1791EAA7B6B00B70758 /* AMLTree.cpp */,
 				5C7CC17A1EAA7B6B00B70758 /* AMLTree.hpp */,
+				5CC4558A1EBA53D50026582F /* HashTable.hpp */,
+				5CC4558B1EBA54260026582F /* HashNode.hpp */,
+				5CC4558C1EBA54520026582F /* HashNode.cpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -202,6 +209,7 @@
 				5CB10EF21E8C2F5F00F2D0FB /* CrimeData.cpp in Sources */,
 				5CFBDA3A1E4BA92E001F9CB4 /* IntNodeArray.cpp in Sources */,
 				5CFBDA3F1E4BB773001F9CB4 /* NodeRunner.cpp in Sources */,
+				5CC4558D1EBA54520026582F /* HashNode.cpp in Sources */,
 				5CB10EF51E8C336400F2D0FB /* FileController.cpp in Sources */,
 				5C7CC17B1EAA7B6B00B70758 /* AMLTree.cpp in Sources */,
 				5C657F681E7711F600BC5D31 /* FoodItem.cpp in Sources */,

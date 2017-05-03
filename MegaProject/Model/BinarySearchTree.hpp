@@ -382,7 +382,7 @@ Type BinarySearchTree<Type> :: findMaximum()
 {
     assert(root != nullptr);
     BinarySearchTreeNode<Type> * largest = getRightMostChild(root);
-    return largest->getNodeData();
+    return largestŒÅÅŒQŒŒ->getNodeData();
 }
 
 void removeNode(BinarySearchTreeNode<Type> * removeMe);
