@@ -36,6 +36,7 @@
 		5C25A3D71E49046B00945FEF /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C25A3E11E490EF100945FEF /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		5C25A3E21E490EF100945FEF /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
+		5C2E53A71EC2351E0016B36C /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Graph.hpp; path = Model/Graph.hpp; sourceTree = "<group>"; };
 		5C42DD8B1E71D94C00EE5C55 /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
 		5C42DD8C1E71E54E00EE5C55 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 		5C4E00791E5CD9F900F29AE2 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
@@ -130,6 +131,7 @@
 				5CC4558A1EBA53D50026582F /* HashTable.hpp */,
 				5CC4558B1EBA54260026582F /* HashNode.hpp */,
 				5CC4558C1EBA54520026582F /* HashNode.cpp */,
+				5C2E53A71EC2351E0016B36C /* Graph.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
