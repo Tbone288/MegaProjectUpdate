@@ -18,7 +18,7 @@ template <class Type>
 class Graph
 {
 private:
-    static cost int MAXIMUM = 20;
+    static const int MAXIMUM = 20;
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
     int vertexCount;
@@ -33,7 +33,9 @@ public:
     Type& operator [] (int vertex);
     Type operator [] (int vertex) const;
     int size() const;
-    bool areConnected(int vertex) const;
+    std::set<int> neighbors(int vertex) const;
+    bool hasUndirectedConnection(int source, int target) const;
+    bool areConnected(int source, int target) const;
     void depthFirstTraversal(Graph<Type> graph, int vertex);
     void breadthFirstTraversal(Graph<Type> graph, int vertex);
 };
@@ -50,8 +52,7 @@ Graph<Type> :: Graph()
 template <class Type>
 Graph<Type> :: ~Graph()
 {
-    delete [] this->adjacencyMatrix;
-    delete [] this->graphData;
+
 }
 
 template <class Type>
@@ -142,15 +143,15 @@ void Graph<Type> :: addEdge(int source, int target)
     adjacencyMatrix[source][target] = true;
 }
 
-}
+
 
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> currentGraph, int vertex)
 {
     bool visitedVerticles[MAXIMUM];
     assert(vertex < currentGraph.size());
-    std:: fill_n(vistedVertices, currentGraph.size(), false);
-    depthFirstTraversal(currentGraph, vertex, visitedArticles);
+    std:: fill_n(visitedVerticles, currentGraph.size(), false);
+    depthFirstTraversal(currentGraph, vertex, visitedVerticles);
 }
 
 template <class Type>
@@ -184,7 +185,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> currentGraph, int vertex)
     visited[vertex] = true;
     cout << currentGraph[vertex] << endl;
     vertexQueue.push(vertex);
-    while (!vertex.Queue.empty())
+    while (!vertexQueue.empty())
     {
         connections = currentGraph.neighbors(vertexQueue.front());
         vertexQueue.pop();

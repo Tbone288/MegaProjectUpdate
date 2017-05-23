@@ -1,5 +1,5 @@
 //
-//  AMLTree.hpp
+//  AVLTree.hpp
 //  MegaProject
 //
 //  Created by Odom, Tyler on 4/21/17.
@@ -21,12 +21,12 @@ private:
     BinarySearchTreeNode<Type> * leftRightRotation(BinarySearchTree<Type> * parent);
     BinarySearchTreeNode<Type> * rightLeftRotation(BinarySearchTree<Type> * parent);
     
-    BinarySearcchTreenode<Type> * balanceSubtree(BinarySearchTreeNode<Type> * parent);
+    BinarySearchTreeNode<Type> * balanceSubTree(BinarySearchTreeNode<Type> * parent);
     
-    BinarySearchTreeNode<Type> * insertNode(BinarySearchTreeNode<Type> * parent);
-    BinarySearchTreeNode<Type> * removeNode(BinarySearchTreeNode<Type>  * parent);
+    BinarySearchTreeNode<Type> * insertNode(BinarySearchTreeNode<Type> * parent, Type value);
+    BinarySearchTreeNode<Type> * removeNode(BinarySearchTreeNode<Type>  * parent, Type value);
     
-    it heightDifferencce(BinarySearchTreeNode<Type> * parent);
+    int heightDifference(BinarySearchTreeNode<Type> * parent);
     
 public:
     AVLTree();
@@ -64,7 +64,7 @@ BinarySearchTreeNode<Type> * AVLTree<Type> :: leftRotation (BinarySearchTreeNode
 }
 
 template <class Type>
-BinarySearchTreeNode<Type> * AVLTree<Type> :: rightRotation (BinarySearchTreeNode<Type> * parent)
+BinarySearchTreeNode<Type> * AVLTree<Type> :: rightRotation (BinarySearchTree<Type> * parent)
 {
     BinarySearchTreeNode<Type> * changedNode;
     changedNode = parent->getRightChild();
@@ -77,7 +77,7 @@ BinarySearchTreeNode<Type> * AVLTree<Type> :: rightRotation (BinarySearchTreeNod
 }
 
 template <class Type>
-BinarySearchTreeNode<Type> * AVLTree<Type> :: rightLeftRotation (BinarySearchNodeTree<Type> * parent)
+BinarySearchTreeNode<Type> * AVLTree<Type> :: rightLeftRotation (BinarySearchTree<Type> * parent)
 {
     BinarySearchTreeNode<Type> * changedNode;
     changedNode = parent->getRightChild();
@@ -88,7 +88,7 @@ BinarySearchTreeNode<Type> * AVLTree<Type> :: rightLeftRotation (BinarySearchNod
 }
 
 template <class Type>
-BinarySearchTreeNode<Type> AVLTree<Type> :: leftRightRotation (BinarySearchNodeTree<Type> * parent)
+BinarySearchTreeNode<Type> * AVLTree<Type> :: leftRightRotation (BinarySearchTree<Type> * parent)
 {
     BinarySearchTreeNode<Type> * changedNode;
     changedNode = parent->getLeftChild();
@@ -151,7 +151,7 @@ BinarySearchTreeNode<Type> * AVLTree<Type> :: insertNode(BinarySearchTreeNode<Ty
 }
 
 template <class Type>
-void AMLTree<Type> :: insert(Type item)
+void AVLTree<Type> :: insert(Type item)
 {
     insertNode(this->getRoot(), item);
 }
